@@ -8,13 +8,13 @@ public class DefaultController {
 
     @GetMapping("/")
     //@GetMapping({"/","/index","/home"})
-    public String getHome(){
-        return "index.html";
+    public String getHome() {
+        return "index";
     }
 
     //esempio redirect
-    @GetMapping({"/index","/home"})
-    public static String redirectHome(){
+    @GetMapping({"/index", "/home"})
+    public static String redirectHome() {
         return "redirect:/";
     }
 }
